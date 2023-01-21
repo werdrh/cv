@@ -30,12 +30,12 @@ body {
 
 .sidebar {
   background: #1e2939;
-  width: 370px;
-  height: 1776px;
+  max-width: 370px;
   padding-bottom: 40px;
 }
 .my-photo {
-  width: 370px;
+  max-width: 370px;
+  object-fit: cover;
 }
 .about-me-container {
   padding-left: 90px;
@@ -44,13 +44,10 @@ body {
   padding-bottom: 110px;
 }
 .contacts-container {
-  margin-top: 60px;
-  margin-left: 40px;
-  margin-right: 40px;
+  
+  padding: 60px 40px 0 40px;
 }
 .contacts-container-item {
-  display: flex;
-  align-items: center;
   margin-bottom: 10px;
 }
 .contacts-titile {
@@ -70,6 +67,8 @@ body {
   font-weight: 400px;
   line-height: 24px;
   color: #d2dfc0;
+  display: flex;
+  align-items: center;
 }
 .contacts-link-type {
   font-size: 14px;
@@ -86,9 +85,7 @@ body {
   color: #fff;
 }
 .tech-skills-container {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 55px;
+  padding: 55px 40px 0 40px;
 }
 .tech-skills-item {
   font-size: 14px;
@@ -108,9 +105,9 @@ body {
   color: #fff;
 }
 .soft-Skills-container {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 55px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 55px;
 }
 .soft-skills-item {
   font-size: 14px;
@@ -166,6 +163,7 @@ body {
 .projects-item {
   font-weight: 700;
   margin-left: 17px;
+  margin-bottom: 10px;
 }
 .projects-container {
   margin-bottom: 55px;
@@ -207,4 +205,77 @@ body {
 }
 .education {
   margin-bottom: 15px;
+}
+@media (max-width: 1100px ){
+    .dots {
+        display: none;
+    }
+    .about-me-container {
+        padding-left: 60px;
+        padding-right: 40px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+@media (max-width: 900px) {
+    body{
+        padding: 10px;
+    }
+    .my-photo {
+        max-width: 300px;
+      }
+  .about-me-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  .sidebar {
+    max-width: 300px;
+    padding-bottom: 40px;
+    height: 100%;
+  }
+  .contacts-container {
+
+    padding: 40px 20px 0 20px;
+  }
+  .projects-link{
+    display: block;
+    
+  }
+  
+}
+
+@media (max-width: 700px) {
+  .tech-skills-container,
+  .soft-Skills-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 35px; 
+  }
+  .sidebar,
+  .my-photo {
+    max-width: 250px;
+  }
+  .name {
+    font-size: 32px;
+    line-height: 150%;
+}
+.prosession{
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+}
+@media (max-width: 570px) {
+    .sidebar,
+    .my-photo {
+      max-width: 100%;
+    }
+    .wrapper {
+       
+        display:inline-block;
+       
+    }
 }
